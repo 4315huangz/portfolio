@@ -148,8 +148,8 @@ page {
 }
 
 page[size="A4"] {
-    width: 21cm;
-    height: 29.7cm;
+    width: 30 cm;
+    height: 42 cm;
 }
 
 .page-container {
@@ -168,13 +168,28 @@ page[size="A4"] {
     align-items: center;
 }
 
+.leftPanel img {
+    width: 180px;
+    height: auto;
+    padding-bottom: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.leftPanel ul {
+    padding-left: 0; 
+    margin-left: 0; 
+    list-style-type: none; 
+}
 .rightPanel {
+    color: var(--background-color);
     width: 73%;
     padding: 0.7cm;
+    text-align: left;
 }
 
 .resume-small-text {
     font-size: 12px;
-    text-align: justify;
+    text-align: left;
     padding-top: 10px;
 }
