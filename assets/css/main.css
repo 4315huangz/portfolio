@@ -44,7 +44,10 @@ header {
     font-family: var(--heading-font);
     background-color: var(--background-color);
 }
-
+.top-container {
+    padding-top: 69px;
+    background-color: var(--background-color);
+}
 a {
     color: var(--default-color);
     text-decoration: none;
@@ -77,6 +80,7 @@ h6 {
 }
 
 .achievement {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
