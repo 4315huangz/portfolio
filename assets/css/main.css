@@ -4,7 +4,6 @@
     --heading-font: "Playfair Display", sans-serif;
     --nav-font: "Poppins", sans-serif;
     --resume-font: "Source Sans Pro", sans-serif;
-    background-color: var(--background-color);
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -14,6 +13,8 @@
     --heading-color: #e1c9a5;
     --accent-color: #697565;
 }
+
+
 
 /* Smooth scroll */
 :root {
@@ -25,8 +26,8 @@
 --------------------------------------------------------------*/
 body {
     color: var(--default-color);
-    background-color: var(--background-color);
     font-family: var(--default-font);
+    background-color: var(--background-color);
 }
 
 header {
@@ -42,10 +43,9 @@ header {
     z-index: 1000;
     color: var(--default-color);
     font-family: var(--heading-font);
-    background-color: var(--background-color);
 }
 .top-container {
-    padding-top: 69px;
+    padding-top: 65px;
     background-color: var(--background-color);
 }
 a {
@@ -79,6 +79,47 @@ h6 {
     padding: 50px;
 }
 
+.mid-container a {
+    font-size: x-large;
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: #e1c9a5;
+}
+
+.certification {
+    font-size: .75em;
+    font-weight: 400;
+}
+
+/*--------------------------about-------------------------------*/
+#about {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 80px, 0;
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.about-col-1 {
+    flex-basis: 35%;
+}
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2 {
+    flex-basis: 60%;
+    font-family: var(--default-font);
+    font-size: .75em;
+    font-weight: 400;
+}
+.about-col-2 p {
+    font-size: 1.5em;
+}
 .achievement {
     width: 100%;
     display: flex;
@@ -87,13 +128,6 @@ h6 {
     align-items: center;
     gap: 10px;
     padding-bottom: 30px;
-}
-
-.mid-container a {
-    font-size: x-large;
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
-    color: #e1c9a5;
 }
 
 .social-links a {
@@ -285,13 +319,27 @@ page[size="A4"] {
     border: none;
 }
 
+.card-text {
+    height: 100px;
+    font-family: var(--default-font);
+    color: var(--background-color);
+}
 
-@media (max-width:576px) {
+.card-body {
+    background-color: #ECDFCC;
+}
+
+
+@media only screen and (max-width:576px) {
     .achievement {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
         padding-bottom: 30px;
+    }
+
+    .about-col-1{
+        display: none;
     }
 }
