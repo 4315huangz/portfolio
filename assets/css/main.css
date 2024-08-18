@@ -184,13 +184,14 @@ h6 {
         width: 100%;
     }
 }
-/*--------------------------Contact-------------------------------*/
+/*--------------------------Message-------------------------------*/
 .contact {
     display: flex;
     flex-direction: row;
     color: var(--default-color);
     background-color: var(--accent-color);
-    padding: 100px;
+    padding: 200px;
+    min-height: 600px;
 }
 
 .contact-left {
@@ -227,7 +228,7 @@ form input, form textarea {
 form .btn2 {
     color: var(--background-color);
     padding: 1px 10px;
-    font-size: 18px;
+    font-size: 1em;
     margin-top: 20px;
     cursor: pointer;
     border: none;
@@ -237,6 +238,11 @@ form .btn2 {
     font-weight: 500;
 }
 
+#msg {
+    color: var(--default-color);
+    margin-top: 5px;
+    display: block;
+}
 /*--------------------------resume-------------------------------
 ** Source: https://medium.com/@iftimiealexandru/creating-a-resume-using-html-and-css-and-saving-it-as-a-pdf-e85d24b0408e 
 ** Author: Iftimie Alexandru
@@ -418,9 +424,6 @@ page[size="A4"] {
     background-color: var(--background-color);
 }
 
-#more img {
-    width: ;
-}
 
 @media only screen and (max-width:576px) {
     .achievement {
