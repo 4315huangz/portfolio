@@ -43,6 +43,7 @@ header {
     padding-top: 65px;
     background-color: var(--background-color);
 }
+
 a {
     color: var(--default-color);
     text-decoration: none;
