@@ -244,7 +244,8 @@ form .btn2 {
     margin-top: 5px;
     display: block;
 }
-/*--------------------------resume-------------------------------
+/*--------------------------
+-------------------------------
 ** Source: https://medium.com/@iftimiealexandru/creating-a-resume-using-html-and-css-and-saving-it-as-a-pdf-e85d24b0408e 
 ** Author: Iftimie Alexandru
 */
@@ -306,6 +307,10 @@ page[size="A4"] {
     margin-left: 0; 
     list-style-type: none; 
 }
+
+.jobPosition a {
+    font-size: 1em;
+}
 .rightPanel {
     font-family: var(--resume-font);
     color: var(--background-color);
@@ -362,9 +367,8 @@ page[size="A4"] {
   .projectName span {
     font-family: var(--resume-font);
   }
-  .jobDescription {
-    font-size: .85em;
-  }
+
+  
 
 /*--------------------------travel-------------------------------*/
 .album{
@@ -426,7 +430,7 @@ page[size="A4"] {
 }
 
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:600px) {
     .achievement {
         display: flex;
         flex-direction: column;
@@ -437,5 +441,27 @@ page[size="A4"] {
 
     .about-col-1{
         display: none;
+    }
+
+    .page-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .leftPanel {
+        width: 100%;
+        color: var(--default-color);
+        background-color: var(--accent-color);
+        padding: 0.7cm;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightPanel {
+        width: 100%;
+        font-family: var(--resume-font);
+        color: var(--background-color);
+        padding: 0.7cm;
+        text-align: left;
     }
 }
