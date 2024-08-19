@@ -413,17 +413,13 @@ page[size="A4"] {
 }
 
 .head-text button {
-    font-size: 2rem;
+    font-size: 1.2rem;
     align-items: end;
 }
 
-#more {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--background-color);
-}
 
 @media (max-width:800px) {
+    
     .about-row {
         display: flex;
         flex-direction: column;
@@ -444,7 +440,7 @@ page[size="A4"] {
         gap: 10px;
         padding-bottom: 30px;
     }
-
+    /*--------------------------resume-------------------------------*/
     .page-container {
         display: flex;
         flex-direction: column;
@@ -466,5 +462,34 @@ page[size="A4"] {
         color: beige;
         padding: 0.7cm;
         text-align: left;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: col;
+        color: var(--default-color);
+        background-color: var(--accent-color);
+        min-height: 600px;
+    }
+    .contact-left {
+        flex-basis: 100%;
+    }
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    /*--------------------------pet-------------------------------*/
+    .head-text {
+        position: relative;
+        margin-left: 60%;
+        margin-top: 30%;
+        font-size: 3rem;
+        color: white;
+        font-family: var(--heading-font);
+    }
+    
+    .head-text button {
+        font-size: 1.2rem;
+        align-items: end;
     }
 }
