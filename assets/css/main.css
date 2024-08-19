@@ -39,6 +39,7 @@ header {
     color: var(--default-color);
     font-family: var(--heading-font);
 }
+
 .top-container {
     padding-top: 65px;
     background-color: var(--background-color);
@@ -64,6 +65,7 @@ h6 {
     color: var(--default-color);
     font-family: var(--heading-font);
 }
+
 .mid-container {
     background-color: var(--background-color);
     color: var(--default-color);
@@ -72,6 +74,7 @@ h6 {
     min-height: 800px;
     padding: 50px;
 }
+
 .mid-container a {
     font-size: x-large;
     border-color: var(--accent-color);
@@ -86,7 +89,8 @@ h6 {
 }
 
 /*--------------------------about-------------------------------*/
-#about, .more{
+#about,
+.more {
     color: var(--default-color);
     background-color: var(--background-color);
     padding: 80px, 0;
@@ -99,22 +103,27 @@ h6 {
     padding: 50px;
     align-items: center;
 }
+
 .about-col-1 {
     flex-basis: 35%;
 }
+
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
 }
+
 .about-col-2 {
     flex-basis: 60%;
     font-family: var(--default-font);
     font-size: .75em;
     font-weight: 400;
 }
+
 .about-col-2 p {
     font-size: 1.5em;
 }
+
 .achievement {
     width: 100%;
     display: flex;
@@ -154,6 +163,7 @@ h6 {
     position: relative;
     align-content: center;
 }
+
 /* Typing Animation */
 #typing-text {
     font-family: var(--default-font);
@@ -185,6 +195,7 @@ h6 {
         width: 100%;
     }
 }
+
 /*--------------------------Message-------------------------------*/
 .contact {
     display: flex;
@@ -211,21 +222,23 @@ h6 {
     margin-right: 10px;
 }
 
-.contact-right form{
+.contact-right form {
     width: 100%;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background:var(--default-color);
+    background: var(--default-color);
     padding: 15px;
     margin: 15px 0;
     font-size: 1em;
     border-radius: 6px;
     color: var(--accent-color);
 }
+
 form .btn2 {
     color: var(--background-color);
     padding: 1px 10px;
@@ -244,6 +257,7 @@ form .btn2 {
     margin-top: 5px;
     display: block;
 }
+
 /*--------------------------
 -------------------------------
 ** Source: https://medium.com/@iftimiealexandru/creating-a-resume-using-html-and-css-and-saving-it-as-a-pdf-e85d24b0408e 
@@ -255,16 +269,18 @@ form .btn2 {
     align-items: center;
     padding-top: 6em;
 }
+
 .download a {
     color: var(--default-color);
     background-color: #6c716a;
-    
 }
-.download a:hover {
+
+.download a:hover, .jobPosition a:hover {
     color: var(--default-color);
     background-color: var(--accent-color);
     transform: translateY(-5px);
 }
+
 page {
     background-color: var(--default-color);
     display: block;
@@ -273,7 +289,7 @@ page {
 }
 
 page[size="A4"] {
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -303,88 +319,65 @@ page[size="A4"] {
 }
 
 .leftPanel ul {
-    padding-left: 0; 
-    margin-left: 0; 
-    list-style-type: none; 
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
 }
 
-.jobPosition a {
-    font-size: 1em;
-}
 .rightPanel {
     font-family: var(--resume-font);
-    color: var(--background-color);
+    color: beige;
     width: 73%;
     padding: 0.7cm;
     text-align: left;
 }
 
+.rightPanel h4, .rightPanel h2, .rightPanel h6 {
+    color: var(--default-color);
+    font-family: var(--nav-font);
+}
+
 .resume-small-text {
-    font-size: .6em;
+    font-size: 1rem;
     text-align: left;
     padding-top: 10px;
 }
-.workExperience>ul>li ul {
-    padding-left: 0.5cm;
-    list-style-type: disc;
-  }
-  .workExperience>ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  .workExperience>ul>li {
-    position: relative;
-    margin: 0;
-    padding-bottom: 0.5cm;
-    padding-left: 0.5cm;
-  }
-  .workExperience>ul>li:before {
-    background-color: #b8abab;
-    width: 0.05cm;
-    content: '';
-    position: absolute;
-    top: 0.1cm;
-    bottom: -0.2cm; 
-    left: 0.05cm;
-  }
-  .workExperience>ul>li::after {
-    content: '';
-    position: absolute;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%23484444' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: -0.09cm;
-    top: 0;
-    width: 0.35cm;
-    height: 0.35cm;
-  }
-  .jobPosition {
+.jobPosition {
+    font-size: 1.2em;
+    color: var(--default-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .jobPosition span, 
-  .projectName span {
-    font-family: var(--resume-font);
-  }
+}
 
-  
+.jobPosition a {
+    text-decoration: none;
+}
+
+.jobDescription {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+
 
 /*--------------------------travel-------------------------------*/
-.album{
-   display: grid;
-   width: 100%;
-   padding: 5rcap;
-   background-color: var(--accent-color);
-   grid-template-columns: 1fr, 1fr, 1fr;
-   grid-template-rows: 1fr, 1fr, 1fr;
+.album {
+    display: grid;
+    width: 100%;
+    padding: 5rcap;
+    background-color: var(--accent-color);
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
 }
-.page-container{
+
+.page-container {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--accent-color);
 }
+
 .page-item a {
     color: var(--default-color);
     font-family: var(--heading-font);
@@ -393,7 +386,7 @@ page[size="A4"] {
 }
 
 .card-text {
-    height: 100px;
+    height: auto;
     font-family: var(--default-font);
     color: var(--background-color);
 }
@@ -415,9 +408,10 @@ page[size="A4"] {
     margin-top: 20%;
     margin-left: 70%;
     font-size: 5rem;
-    color:white;
+    color: white;
     font-family: var(--heading-font);
 }
+
 .head-text button {
     font-size: 2rem;
     align-items: end;
@@ -429,8 +423,20 @@ page[size="A4"] {
     background-color: var(--background-color);
 }
 
+@media (max-width:800px) {
+    .about-row {
+        display: flex;
+        flex-direction: column;
+        padding: none;
+        width: 100%;
+        justify-content: center;
+    }
 
-@media only screen and (max-width:600px) {
+    .about-col-1 img {
+        height: 300px;
+        padding-bottom: 50px;
+    }
+
     .achievement {
         display: flex;
         flex-direction: column;
@@ -439,14 +445,11 @@ page[size="A4"] {
         padding-bottom: 30px;
     }
 
-    .about-col-1{
-        display: none;
-    }
-
     .page-container {
         display: flex;
         flex-direction: column;
     }
+
     .leftPanel {
         width: 100%;
         color: var(--default-color);
@@ -460,7 +463,7 @@ page[size="A4"] {
     .rightPanel {
         width: 100%;
         font-family: var(--resume-font);
-        color: var(--background-color);
+        color: beige;
         padding: 0.7cm;
         text-align: left;
     }
