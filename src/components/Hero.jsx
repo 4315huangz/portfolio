@@ -35,7 +35,7 @@ const Hero = () => {
                       className='my-2 max-w-xl py-6 font-light tracking-tight'>
                         {HERO_CONTENT}
                     </motion.p>
-                    <a href={`${process.env.PUBLIC_URL}/resume.pdf`}
+                    <a href='./resume.pdf'
                        target='_blank' 
                        rel='noopener noreferrer' 
                        download
