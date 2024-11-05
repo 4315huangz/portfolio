@@ -8,6 +8,10 @@
     font-family: "Inter", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .label {
     @apply block text-zinc-200 text-sm font-normal mb-2
 }
