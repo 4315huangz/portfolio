@@ -35,6 +35,11 @@ const Hero = () => {
                       className='my-2 max-w-xl py-6 font-light tracking-tight'>
                         {HERO_CONTENT}
                     </motion.p>
+                    <a href='../assets/resume.pdf'
+                       target='_blank' 
+                       rel='noopener noreferrer' 
+                       download
+                       className='bg-violet-950 rounded-full p-4 text-sm text-slate-300 mb-10'>Download Resume</a>
                 </div>
             </div>
             <div className='w-full lg:w-1/2 lg:p-8'>
